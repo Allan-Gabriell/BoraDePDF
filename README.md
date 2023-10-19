@@ -1,2 +1,2 @@
-# BoraDePDF
-Projeto destinado para a apresentação do aplicativo [BoraDePDF?!](boradepdf.glide.page)
+# Site de apresentação
+Repositório destinado ao site de apresentação do [BoraDePdf?!](boradepdf.glide.page)🌵
