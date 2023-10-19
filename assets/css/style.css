@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Gabarito:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2? family= Inter & display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Asap&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Asap", sans-serif;
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background: #42455a;
+    padding: 20px;
+    text-align: end;
+    
+    background: #ffffff00;
+
+}
+
+header nav a {
+    padding: 10px 20px;
+    font-size: 2rem;
+    color: #e0ffff;
+    border-radius: 5px;
+    letter-spacing: 0.5px;
+    -webkit-filter: drop-shadow(1px 1px 1px #222);
+    filter: drop-shadow(2px 2px 2px #222);
+}
+
+header nav a:hover,
+header nav a.active {
+  background: #dda766;
+  color: #e0ffff;
+  transition: 0.5s ease-out;
+  letter-spacing: 2px;
+}
+
+  section {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  section:nth-child(1) {
+    color: #E1D8C9
+  }
+  section:nth-child(2) {
+    color: #42455a;
+    background: #cec4b2;
+  }
+  section:nth-child(3) {
+    color: #e0ffff;
+    background: #42455a;
+  }
+  section:nth-child(4) {
+    color: #42455a;
+    background: #cec4b2;
+  }
+  section:nth-child(5) {
+    color: #e0ffff;
+  }
+  section .container {
+    margin: 100px;
+  }
+  section h1 {
+    font-size: 3rem;
+    margin: 20px;
+  }
+  section img{
+    height: 400px;
+    border-radius: 50px;
+    -webkit-filter: drop-shadow(5px 5px 5px #222);
+    filter: drop-shadow(5px 5px 5px #222);
+}
+  section .text-container {
+    display: flex;
+  }
+  section .text-container .text-box {
+    margin: 20px;
+    padding: 20px;
+    color: #42455a;
+    background: #e0774d00;
+    border-radius: 10px;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  section .qrcode{
+    height: 150px;
+    border-radius: 0px;
+  }
+
+  section .text-container .text-box-when-other {
+    display: flex;
+    margin: 9px;
+    padding: 20px;
+    color: #e0ffff;
+    background: #e0774d;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  section .text-container .text-box h3 {
+    display: center;
+    font-size: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+  }
+  
+  @media (max-width: 900px) {
+    section h1 {
+      font-size: 2rem;
+      text-align: center;
+    }
+    section .text-container {
+      flex-direction: column;
+    }
+  }
+
+.reveal{
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: 2s all ease;
+  }
+.reveal.active{
+    transform: translateY(0);
+    opacity: 1;
+}
