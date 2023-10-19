@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Asap:wght@400;600&family=Inter&display=swap');
+
+* {
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    background-color: #FF6B1A;
+}
+
+.container-1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+    padding: 5%;
+    background-color: #006663;
+    box-sizing: border-box;
+}
+
+.cll {
+    width: 25%;
+    border-radius: 30px;
+}
+
+.text-1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #006663;
+}
+
+p {
+    background-color: #006663;
+}
+
+.paragrafo {
+    padding-top: 2%;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+    color: white;
+}
+
+.titulo {
+    font-family: 'Asap', sans-serif;
+    font-weight: 600;
+    font-size: 25px;
+    color: white;
+}
+
+.paragrafo-1 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+    color: white;
+    padding-bottom: 5%;
+}
+
+.button-container-1 {
+    height: 50px;
+    width: 250px;
+    border-radius: 35px;
+    border-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.foguete {
+    width: 13%;
+    padding-right: 10px;
+}
+
+.texto-button {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    color: white;
+}
+
+
+.mulher-cll {
+    width: 25%;
+}
+
+.container-2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-right: 20px;
+}
+
+.p1 {
+    background-color:#006663;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: white;
+    padding-top: 3%;
+}
+
+.p1-titulo{
+    background-color: #006663;
+    font-family: 'Asap', sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    color: white;
+}
+
+.comousar {
+    width: 23%;
+    background-color: #006663;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1% 0;
+    border-radius: 15px;
+}
+
+.ondeir {
+    width: 20%;
+    background-color: #006663;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1% 0;
+    border-radius: 15px;
+}
+
+.avaliacoes {
+    width: 23%;
+    background-color: #006663;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1% 0;
+    border-radius: 15px;
+}
