@@ -82,8 +82,10 @@ p {
 }
 
 
-.mulher-cll {
+section img {
     width: 25%;
+   /* -webkit-filter: drop-shadow(5px 5px 5px #222);
+    filter: drop-shadow(5px 5px 5px #222);*/
 }
 
 .container-2 {
@@ -138,4 +140,18 @@ p {
     align-items: center;
     padding: 1% 0;
     border-radius: 15px;
+}
+
+.categorias {
+    background-color: #B33F00;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 3% 0.5%;
+}
+
+.celular {
+   width: 35%; 
+   padding: 2%;
+   background-color: #B33F00;
 }
