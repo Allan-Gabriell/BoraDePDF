@@ -7,7 +7,7 @@
     margin: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
-    background-color: #FF6B1A;
+    background-color: #F58447;
 }
 
 .container-1 {
@@ -16,7 +16,7 @@
     align-items: center;
     justify-content: space-around;
     padding: 5%;
-    background-color: #006663;
+    background-color: #fefefe;
     box-sizing: border-box;
 }
 
@@ -29,11 +29,11 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #006663;
+    background-color: #fefefe;
 }
 
 p {
-    background-color: #006663;
+    background-color: #fefefe;
 }
 
 .paragrafo {
@@ -41,21 +41,21 @@ p {
     font-family: 'Inter', sans-serif;
     font-weight: 400;
     font-size: 13px;
-    color: white;
+    color: #FF914C;
 }
 
 .titulo {
     font-family: 'Asap', sans-serif;
     font-weight: 600;
     font-size: 25px;
-    color: white;
+    color: #FF914C;
 }
 
 .paragrafo-1 {
     font-family: 'Inter', sans-serif;
     font-weight: 400;
     font-size: 13px;
-    color: white;
+    color: #FF914C;
     padding-bottom: 5%;
 }
 
@@ -94,25 +94,25 @@ p {
 }
 
 .p1 {
-    background-color:#006663;
+    background-color:#fefefe;
     font-family: 'Inter', sans-serif;
     font-weight: 400;
     font-size: 14px;
-    color: white;
+    color: #71727A;
     padding-top: 3%;
 }
 
-.p1-titulo{
-    background-color: #006663;
+.p1-titulo {
+    background-color: #fefefe;
     font-family: 'Asap', sans-serif;
     font-weight: 600;
     font-size: 20px;
-    color: white;
+    color: #FF914C; /* Alteração da cor para #FF914C */
 }
 
 .comousar {
     width: 23%;
-    background-color: #006663;
+    background-color: #fefefe;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -122,7 +122,7 @@ p {
 
 .ondeir {
     width: 20%;
-    background-color: #006663;
+    background-color: #fefefe;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -132,7 +132,7 @@ p {
 
 .avaliacoes {
     width: 23%;
-    background-color: #006663;
+    background-color: #fefefe;
     display: flex;
     flex-direction: column;
     align-items: center;
