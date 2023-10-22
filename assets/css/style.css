@@ -1,140 +1,181 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Asap:wght@400;600&family=Inter&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Asap:wght@200;400;600&display=swap');
+
+:root{
+    --corPrincipal: #F58447;     
+    --corSegundaria: #fefefe;                        
+}
 
 * {
     text-decoration: none;
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
     scroll-behavior: smooth;
-    background-color: #F58447;
 }
 
-header {
+body{
+    background-color: var(--corPrincipal);
+}
+
+.container{
+    max-width: 1536px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    border: 2px solid black
+}
+/* header style */
+header{
+    height: 90px;
+}
+
+.navHeader {
+    position: fixed;
+    top: 0 ;
+    left: 0;
     display: flex;
     justify-content: flex-start;
-    position: fixed;
-    top: 0;
-    left: 0;
+    align-items: center;
     width: 100%;
-    z-index: 1000;
+    height: 90px;
+    z-index: 1;
     padding: 20px;
-    text-align: end;
-    background: #fefefe;
-    border-bottom: 0.3px solid;
-    color: #F58447;
+    background: var(--corSegundaria);
+    border-bottom: 0.3px solid var(--corPrincipal);
 }
 
-nav {
+.navLinks {
     background: none;
-}
-
-
-nav a {
-    background: none;
+    list-style: none;
+    display: flex;
     font-family: 'Asap', sans-serif;
     font-size: 1.3rem;
-    color: #F58447 ;
-    font-weight: 600;
-    padding-left: 10px;
-   
+    font-weight: 400;
+    gap: 1.3rem;
 }
 
+.navLinks a{
+    color: var(--corPrincipal);
+    transition: .3s;
+}
 
+.navLinks a:hover{
+    color: #71727A;
+}
 
+/* end header style */
+/* main style */
 .container-1 {
     display: flex;
     justify-content: center;
     align-items: center;
     justify-content: space-around;
-    padding: 5%;
-    background-color: #fefefe;
+    padding: 3% 3% 5%;
+    background-color: var(--corSegundaria);
     box-sizing: border-box;
 }
 
-.cll {
-    width: 25%;
+.logo {
+    width: 20%;
     border-radius: 30px;
 }
 
-.text-1 {
+.container-1 > .texto{
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #fefefe;
 }
 
-p {
-    background-color: #fefefe;
-}
-
-.paragrafo {
-    padding-top: 2%;
-    font-family: 'Inter', sans-serif;
-    font-weight: 400;
-    font-size: 13px;
-    color: #FF914C;
-}
-
-.titulo {
+.container-1 > .texto > .titulo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     font-family: 'Asap', sans-serif;
     font-weight: 600;
-    font-size: 25px;
-    color: #FF914C;
+    color: var(--corPrincipal);
 }
 
-.paragrafo-1 {
-    font-family: 'Inter', sans-serif;
+.container-1 > .texto > .titulo h1{
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.container-1 > .texto > .titulo h3{
     font-weight: 400;
-    font-size: 13px;
-    color: #FF914C;
-    padding-bottom: 5%;
+    font-size: 1.5rem;
+}
+
+.container-1 > .texto > .paragrafo {
+    margin-top: 1.3rem;
+    font-size: 1rem;
+    color: var(--corPrincipal);
 }
 
 .button-container-1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
     height: 50px;
     width: 250px;
     border-radius: 35px;
     border-style: none;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    -webkit-filter: drop-shadow(5px 5px 5px #222);
+    background-color: var(--corPrincipal);
     filter: drop-shadow(5px 5px 5px #222);
-
 }
 
 .foguete {
-    width: 13%;
-    padding-right: 10px;
+    width: 11%;
+    margin-right: 20px;
 }
 
 .texto-button {
-    font-family: 'Inter', sans-serif;
-    font-weight: 400;
+    font-style: none;
+    font-family: 'Asap', sans-serif;
     font-size: 20px;
-    color: white;
+    font-weight: 400;
+    color: var(--corSegundaria);
 }
 
-
-.mulher-cll{
-    width: 25%;
-    border-radius: 50px;
-    background: none;
-    -webkit-filter: drop-shadow(5px 5px 5px #222);
-    filter: drop-shadow(5px 5px 5px #222);
-    padding-bottom: 2%;
-}
-
+/* container 2 style */
 .container-2 {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    padding-right: 20px;
+    margin-right: 20px;
 }
 
-.p1 {
-    background-color:#fefefe;
+.mulher{
+    width: 25%;
+    border-radius: 50px;
+    filter: drop-shadow(5px 5px 5px #222);
+    padding-bottom: 2%;
+}
+
+.container-2 > .bloco {
+    width: 24%;
+    height: 100px;
+    background-color: var(--corSegundaria);
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    border-radius: 15px;
+}
+
+.container-2 > .bloco > .conteudo{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    padding-left: 10px;
+}
+
+.container-2 > .bloco > .conteudo > p {
     font-family: 'Inter', sans-serif;
     font-weight: 400;
     font-size: 14px;
@@ -142,122 +183,65 @@ p {
     padding-top: 3%;
 }
 
-.p1-titulo {
-    background-color: #fefefe;
+.container-2 > .bloco > .conteudo > h2{
     font-family: 'Asap', sans-serif;
     font-weight: 600;
     font-size: 20px;
-    color: #FF914C; /* Alteração da cor para #FF914C */
+    color: var(--corPrincipal);
 }
+/* end container 2 style */
 
-.comousar {
-    width: 23%;
-    background-color: #fefefe;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 1% 0;
-    border-radius: 15px;
-}
-
-.ondeir {
-    width: 20%;
-    background-color: #fefefe;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 1% 0;
-    border-radius: 15px;
-}
-
-.avaliacoes {
-    width: 23%;
-    background-color: #fefefe;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 1% 0;
-    border-radius: 15px;
-}
-
-.categorias {
-    display: flex;
-    padding: 3%;
-    background-color: #fefefe;
+/* container 3 style */
+.container-3 {
     display: flex;
     align-items: center;
     justify-content: space-around;
+    padding: 3%;
     padding-right: 20px;
+    background-color: var(--corSegundaria);
 }
 
 .celular {
     width: 40%;
     border-radius: 50px;
-    background: none;
-    -webkit-filter: drop-shadow(5px 5px 5px #222);
     filter: drop-shadow(5px 5px 5px #222);
 }
 
 .lista-categorias{
-    width: 40%;
-    background-color: #FF914C;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 1% 0;
-    border-radius: 15px;
     justify-content: space-around;
+    width: 45%;
+    height: 300px;
+    padding: 1.5rem 0;
+    background-color: var(--corPrincipal);
+    border-radius: 15px;
 }
 
 .lista {
-    width: 70%;
+    width: 90%;
     display: flex;
     justify-content: space-around;
-    background: none;
-    flex-direction: row;
 }
 
-.tipos-categorias {
-    width: 500px;
-    background: #FF914C;
-    display: flex;
-    border-radius: 10px;
-    max-width: max-content;
-    padding-bottom: 5px;
-}
-
-.titulo-categorias {
-    background-color: #FF914C;
+.container-3 > .lista-categorias h2 {
     font-family: 'Asap', sans-serif;
     font-weight: 600;
     font-size: 40px;
-    color: #fefefe;
-    height: 100%;
-    padding-bottom: 20px;
+    color: var(--corSegundaria);
+    margin-bottom: 20px;
 }
 
-.lista-1 {
+.container-3 > .lista-categorias > .lista{
     font-family: 'Asap', sans-serif;
-    font-weight: 600;
+    font-weight: 400;
     font-size: 20px;
-    color: #fefefe;
-    background-color: #FF914C;
-    padding-right: 20px;
+    color: var(--corSegundaria);
 }
 
-.lista-2 {
-    font-family: 'Asap', sans-serif;
-    font-weight: 600;
-    font-size: 20px;
-    color: #fefefe;
-    background-color: #FF914C;
-    padding-right: 20px;
-}
-
-.lista-3 {
-    font-family: 'Asap', sans-serif;
-    font-weight: 600;
-    font-size: 20px;
-    color: #fefefe;
-    background-color: #FF914C;
+.container-3 > .lista-categorias > .lista p{
+    margin: 10px 0;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
 }
