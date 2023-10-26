@@ -8,8 +8,6 @@
 main{
     display: grid;
     grid-template-columns: 1fr;
-    grid-row: 500px;
-    justify-items: center;
 }
 
 section{
@@ -19,15 +17,16 @@ section{
 
 .apresentacao{
     display: flex;
-    position: relative;
-    z-index: 2;
     align-items: center;
-    justify-content: start;
+    position: relative;
+    z-index: 100;
+    overflow: hidden;
 }
 
 .apresentacao > .texto{
     width: 70%;
     margin: 0 2em;
+    z-index: 2;
     color: var(--corSegundaria);
 }
 
@@ -39,9 +38,9 @@ section{
 }
 
  .image > .logo{
-    width: 500px;
+    width: 450px;
  }
 
-.team{
+.team-section{
     background: var(--corSegundaria);
 }
