@@ -15,6 +15,10 @@ section{
     width: 100%;
 }
 
+.section-white{
+    background: var(--corSegundaria);
+}
+
 .apresentacao{
     display: flex;
     align-items: center;
@@ -40,7 +44,3 @@ section{
  .image > .logo{
     width: 450px;
  }
-
-.team-section{
-    background: var(--corSegundaria);
-}

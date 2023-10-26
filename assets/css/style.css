@@ -7,10 +7,11 @@
 }
 
 * {
-    text-decoration: none;
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
     font-family: 'Inter', sans-serif;
     font-weight: 400;
     scroll-behavior: smooth;
@@ -18,6 +19,7 @@
 
 body{
     background-color: var(--corPrincipal);
+    overflow-x: hidden;
 }
 
 /* header style */
@@ -27,27 +29,23 @@ header{
 
 .navHeader {
     position: fixed;
-    top: 0 ;
-    left: 0;
     display: flex;
-    justify-content: flex-start;
     align-items: center;
     width: 100%;
-    height: 90px;
+    height: inherit;
     z-index: 1000;
-    padding: 20px;
+    font-size: 1rem;
+    padding: 1em;
     background: var(--corSegundaria);
     border-bottom: 0.3px solid var(--corPrincipal);
 }
 
 .navLinks {
-    background: none;
-    list-style: none;
     display: flex;
     font-family: 'Asap', sans-serif;
-    font-size: 1.3rem;
+    font-size: 1.3em;
     font-weight: 400;
-    gap: 1.3rem;
+    gap: 1em;
 }
 
 .navLinks a{
@@ -371,20 +369,14 @@ header{
     header{
         height: 70px;
     } 
-
+    
+    .navHeader{
+        font-size: 0.8rem;
+    }
+    
     .logo{
         width: 120px;
         margin: 0px;
-    }
-
-    .navHeader {
-        width: 100%;
-        height: 70px;
-        padding: 20px;
-    }
-
-    .navLinks {
-        font-size: 1rem;
     }
 
     .container-1 {
