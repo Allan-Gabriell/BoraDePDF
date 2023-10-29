@@ -1,31 +1,26 @@
-var swiper = new Swiper(".slide-content", {
-    slidesPerView: 3,
-    spaceBetween: 25,
-    loop: true,
-    centerSlide: 'true',
-    fade: 'true',
-    grabCursor: 'true',
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
-      dynamicBullets: true,
+import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.mjs'
+
+const swiper = new Swiper(".swiper", {
+  loop: 'true',
+  slidesPerView: 3,
+  spaceBetween: 30,
+  centeredSlides: true,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+
+  breakpoints: {
+    0: {
+      slidesPerView: 2,
     },
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
+
+    520:{
+      slidesPerView: 3,
     },
 
-    breakpoints: {
-      0: {
-        slidesPerView: 1,
-      },
-
-      520:{
-        slidesPerView: 2,
-      },
-
-      950:{
-        slidesPerView: 3,
-      },
-    }
-  });
+    950:{
+      slidesPerView: 4,
+    },
+  }
+});

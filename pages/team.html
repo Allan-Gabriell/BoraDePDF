@@ -6,7 +6,7 @@
     <link rel="shortcut icon" href="../assets/img/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="../assets/css/style.css">
     <link rel="stylesheet" href="../assets/css/team.css">
-    <link rel="stylesheet" href="../assets/css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <title>Team BoraDePdf</title>
 </head>
@@ -35,90 +35,22 @@
                 <img src="../assets/img/logo.png" alt="" class="logo">
             </div>
         </section>
-
+        <!-- o swiper slide é os cards -->
         <section class="section-white team-section">
-            <div class="slide-container swiper">
-                <div class="slide-content">
-                    <div class="card-wrapper swiper-wrapper">
-                        <div class="card swiper-slide">
-                            <div class="image-content">
-                                <span class="overlay"></span>
-
-                                <div class="card-image">
-                                    <img src="https://sigaa.ufersa.edu.br/shared/verFoto?idFoto=1999366&key=62d540ca71f662e25742a359e6472feb" alt="gustavo" class="card-img">
-                                </div>
-                            </div>
-
-                            <div class="card-content">
-                                <h2 class="name">Gustavo Rodrigues</h2>
-
-                                <div class="descricao">
-                                    <h4>Desenvolvimento</h4>
-                                    <div class="social">
-                                        <h3>Redes Sociais</h3>
-                                        <a href="#"><i class='bx bxl-github github'></i></a>
-                                        <a href="#"><i class='bx bxl-linkedin-square linkedin' ></i></a>
-                                        <a href="#"><i class='bx bxl-instagram instagram'></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="card swiper-slide">
-                            <div class="image-content">
-                                <span class="overlay"></span>
-
-                                <div class="card-image">
-                                    <img src="https://sigaa.ufersa.edu.br/shared/verFoto?idFoto=1999366&key=62d540ca71f662e25742a359e6472feb" alt="gustavo" class="card-img">
-                                </div>
-                            </div>
-
-                            <div class="card-content">
-                                <h2 class="name">dasfasfg Rodrigues</h2>
-
-                                <div class="descricao">
-                                    <h4>Desenvolvimento</h4>
-                                    <div class="social">
-                                        <h3>Redes Sociais</h3>
-                                        <a href="#"><i class='bx bxl-github github'></i></a>
-                                        <a href="#"><i class='bx bxl-linkedin-square linkedin' ></i></a>
-                                        <a href="#"><i class='bx bxl-instagram instagram'></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="card swiper-slide">
-                            <div class="image-content">
-                                <span class="overlay"></span>
-
-                                <div class="card-image">
-                                    <img src="https://sigaa.ufersa.edu.br/shared/verFoto?idFoto=1999366&key=62d540ca71f662e25742a359e6472feb" alt="gustavo" class="card-img">
-                                </div>
-                            </div>
-
-                            <div class="card-content">
-                                <h2 class="name"> Rodrigues</h2>
-
-                                <div class="descricao">
-                                    <h4>Desenvolvimento</h4>
-                                    <div class="social">
-                                        <h3>Redes Sociais</h3>
-                                        <a href="#"><i class='bx bxl-github github'></i></a>
-                                        <a href="#"><i class='bx bxl-linkedin-square linkedin' ></i></a>
-                                        <a href="#"><i class='bx bxl-instagram instagram'></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>  
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">Slide 1</div>
+                  <div class="swiper-slide">Slide 2</div>
+                  <div class="swiper-slide">Slide 3</div>
+                  <div class="swiper-slide">Slide 4</div>
+                  <div class="swiper-slide">Slide 5</div>
+                  <div class="swiper-slide">Slide 6</div>
+                  <div class="swiper-slide">Slide 7</div>
+                  <div class="swiper-slide">Slide 8</div>
+                  <div class="swiper-slide">Slide 9</div>
                 </div>
- 
-                <div class="swiper-button-next swiper-navBtn"></div>
-                <div class="swiper-button-prev swiper-button"></div>
                 <div class="swiper-pagination"></div>
-            </div>
-            
+              </div>
         </section>
 
         <section>
@@ -130,7 +62,6 @@
 
     </footer>
 
-    <script src="../assets/js/swiper-bundle.min.js.js"></script>
-    <script src="../assets/js/script.js"></script>
+    <script type="module" src="../assets/js/script.js" defer></script>
 </body>
 </html>
