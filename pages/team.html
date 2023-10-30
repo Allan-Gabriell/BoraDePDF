@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../assets/img/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="../assets/css/swiper-bundle.min.css">
     <link rel="stylesheet" href="../assets/css/style.css">
     <link rel="stylesheet" href="../assets/css/team.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <title>Team BoraDePdf</title>
 </head>
@@ -37,20 +37,66 @@
         </section>
         <!-- o swiper slide é os cards -->
         <section class="section-white team-section">
-            <div class="swiper mySwiper">
-                <div class="swiper-wrapper">
-                  <div class="swiper-slide">Slide 1</div>
-                  <div class="swiper-slide">Slide 2</div>
-                  <div class="swiper-slide">Slide 3</div>
-                  <div class="swiper-slide">Slide 4</div>
-                  <div class="swiper-slide">Slide 5</div>
-                  <div class="swiper-slide">Slide 6</div>
-                  <div class="swiper-slide">Slide 7</div>
-                  <div class="swiper-slide">Slide 8</div>
-                  <div class="swiper-slide">Slide 9</div>
+             <div class="card-container swiper">
+                <div class="card-content">
+                    <div class="swiper-wrapper">
+                        <article class="card-article swiper-slide">
+                            <div class="card-image">
+                                <img src="../assets/img/logo.jpeg" alt="image" class="card-img">
+                            </div>
+
+                            <div class="card-data">
+                                <h3 class="card-name">Gustavo Rodrigues</h3>
+                                <h5 class="setor">Desenvolvimento</h5>
+                                <div class="social">
+                                    <a href=""><i class='bx bxl-github github'></i></a>
+                                    <a href=""><i class='bx bxl-linkedin-square linkedin'></i></a>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="card-article swiper-slide">
+                            <div class="card-image">
+                                <img src="../assets/img/logo.jpeg" alt="image" class="card-img">
+                            </div>
+
+                            <div class="card-data">
+                                <h3 class="card-name">Gustavo sdfasdfgag</h3>
+                                <h5 class="setor">Desenvolvimento</h5>
+                                <div class="social">
+                                    <a href=""><i class='bx bxl-github github'></i></a>
+                                    <a href=""><i class='bx bxl-linkedin-square linkedin'></i></a>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="card-article swiper-slide">
+                            <div class="card-image">
+                                <img src="../assets/img/logo.jpeg" alt="image" class="card-img">
+                            </div>
+
+                            <div class="card-data">
+                                <h3 class="card-name">dghfdgh Rodrigues</h3>
+                                <h5 class="setor">Desenvolvimento</h5>
+                                <div class="social">
+                                    <a href=""><i class='bx bxl-github github'></i></a>
+                                    <a href=""><i class='bx bxl-linkedin-square linkedin'></i></a>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+
+                    <div class="swiper-pagination"></div>
+
+                    <div class="swiper-button-prev">
+                        <i class='bx bx-chevron-left'></i>
+                    </div>
+                    <div class="swiper-button-next">
+                        <i class='bx bx-chevron-right' ></i>
+                    </div>
+
                 </div>
-                <div class="swiper-pagination"></div>
-              </div>
+             </div>
         </section>
 
         <section>
@@ -59,9 +105,10 @@
     </main>
 
     <footer>
-
+ 
     </footer>
 
-    <script type="module" src="../assets/js/script.js" defer></script>
+    <script src="../assets/js/swiper-bundle.min.js.js"></script>
+    <script src="../assets/js/script.js"></script>
 </body>
 </html>

@@ -9,8 +9,8 @@
 }
 
 main{
-    display: grid;
-    grid-template-columns: 1fr;
+    display: flex;
+    flex-direction: column;
 }
 
 section{
@@ -49,42 +49,110 @@ section{
 }
 
 /* team section style*/
-
-   
-
-/* .swiper { o conainer
-    background: black;
-    max-width: 1500px;
-    width: 100%;
-    height: 100%;
-}
-
-.swiper-wrapper{
-    background: #000;
-}
-
-.swiper-slide {os cards
+.team-section{
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 1rem;
-    background: #fff;
-} */
-.team-section{
-    position: relative;
+    height: 500px;
 }
 .swiper {
-    background: black;
-    max-width: 1500px;
-    width: 100%;
-    height: 100%;
+    width: 1600px;
   }
+  
 
-  .swiper-slide {
-    text-align: center;
-    font-size: 18px;
-    background: #fff;
+.card-container{
+    padding-block: 3rem;
+}
+
+.card-content{
+    margin-inline: 1.75rem;
+    border-radius: 1.25rem;
+    overflow: hidden;
+}
+
+
+.card-article{
+    width: 300px;
+    border-radius: 1.25rem;
+    overflow: hidden;
+}
+ 
+.card-image{
+    position: relative;
+    background-color: var(--corPrincipal);
+    padding-top: 1.5rem;
+    margin-bottom: -.75rem;
     display: flex;
     justify-content: center;
     align-items: center;
-  }
+}
+.card-img{
+    width: 150px;
+    margin-bottom: 1.4rem ;
+    border-radius: 50%;
+    border: 4px solid var(--corCards);
+    padding: 2px;
+    position: relative;
+    z-index: 5;
+}
+
+.card-data{
+    background-color: var(--corCards);
+    padding: 1.25rem 2rem;
+    border-radius: 1rem;
+    text-align: center;
+    position: relative;
+    z-index: 10;
+}
+
+.card-name{
+    color: var(--corTextoPreto);
+    margin-bottom: .5em;
+    font-size: 1.3rem;
+}
+.setor{
+    color: var(--corTextoPreto2);
+    font-size: 1rem;
+}
+.social{
+    margin-top: 1.3em;
+}
+.social i{
+    font-size: 2rem;
+}
+.social a .github{
+    color: var(--corTextoPreto);
+}
+.social a .linkedin{
+    color: #0077b5;
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after{
+    content: '';
+}
+
+.swiper-button-prev,
+.swiper-button-next{
+    width: initial;
+    height: initial;
+    font-size: 3rem;
+    color: var(--corPrincipal);
+    display: none;
+}
+.swiper-button-prev{
+    left: 0;
+}
+.swiper-button-next{
+    right: 0;
+}
+
+.swiper-pagination-bullet{
+    background-color: var(--corTextoPreto2);
+    opacity: 1;
+}
+.swiper-pagination-bullet-active{
+    background-color: var(--corPrincipal);
+}
+
+/* parei na responsividade */

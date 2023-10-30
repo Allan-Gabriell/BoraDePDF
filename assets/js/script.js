@@ -1,26 +1,31 @@
-import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.mjs'
-
-const swiper = new Swiper(".swiper", {
-  loop: 'true',
-  slidesPerView: 3,
-  spaceBetween: 30,
-  centeredSlides: true,
+let swiperCards = new Swiper('.card-content', {
+  loop: true,
+  spaceBetween: 32,
+  grabCursor: true,
+  // If we need pagination
   pagination: {
-    el: ".swiper-pagination",
+    el: '.swiper-pagination',
     clickable: true,
+    dynamicBullets: true,
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+
+  // And if we need scrollbar
+  scrollbar: {
+    el: '.swiper-scrollbar',
   },
 
   breakpoints: {
-    0: {
+    600: {
       slidesPerView: 2,
     },
-
-    520:{
+    968: {
       slidesPerView: 3,
     },
-
-    950:{
-      slidesPerView: 4,
-    },
-  }
+  },
 });
