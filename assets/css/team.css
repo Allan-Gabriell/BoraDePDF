@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;400;600&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Asap:wght@200;400;600&display=swap');
-:root{
+@import url('https://fonts.googleapis.com/css2?family=Asap:wght@200;400;600;800&display=swap');:root{
     --corPrincipal: #F58447;     
     --corSegundaria: #efefef;  
     --corCards: #fefefe;        
@@ -14,7 +13,7 @@ main{
 }
 
 section{
-    height: 500px;
+    height: 550px;
     width: 100%;
 }
 
@@ -25,51 +24,74 @@ section{
 .apresentacao{
     display: flex;
     align-items: center;
-    position: relative;
-    z-index: 100;
+    position: relative; 
     overflow: hidden;
 }
 
-.apresentacao > .texto{
+.apresentacao .texto{
     width: 70%;
     margin: 0 2em;
     z-index: 2;
     color: var(--corSegundaria);
 }
 
-.image{
+.texto h1{
+    font-size: 3rem;
+    font-weight: 600;
+    margin-bottom: .5em;
+}
+.texto p{
+    font-size: 1.2rem;
+    text-align: justify;
+}
+
+.apresentacao > .image{
     position: absolute;
     z-index: 1;
     right: 0;
     opacity: 30%;
 }
 
-.image > .logo{
+.apresentacao > .image > .logo{
     width: 450px;
 }
 
 /* team section style*/
 .team-section{
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 500px;
+}
+
+.titulo-section{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    top: 2%;
+    width: 100%;
+}
+.titulo-section h1{
+    font-family: 'Asap', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: var(--corPrincipal);
 }
 .swiper {
-    width: 1600px;
+    width: 1800px;
+    padding: 0 2em;
+    margin: 0 2em;
   }
   
-
 .card-container{
-    padding-block: 3rem;
+    padding-block: 3em;
 }
 
 .card-content{
-    margin-inline: 1.75rem;
+    margin: 0 1.25em;
     border-radius: 1.25rem;
     overflow: hidden;
 }
-
 
 .card-article{
     width: 300px;
@@ -80,15 +102,16 @@ section{
 .card-image{
     position: relative;
     background-color: var(--corPrincipal);
-    padding-top: 1.5rem;
-    margin-bottom: -.75rem;
+    padding-top: 1.5em;
+    margin-bottom: -.75em;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 .card-img{
     width: 150px;
-    margin-bottom: 1.4rem ;
+    height: 150px;
+    margin-bottom: 1.4em ;
     border-radius: 50%;
     border: 4px solid var(--corCards);
     padding: 2px;
@@ -98,7 +121,7 @@ section{
 
 .card-data{
     background-color: var(--corCards);
-    padding: 1.25rem 2rem;
+    padding: 1.25em 2em;
     border-radius: 1rem;
     text-align: center;
     position: relative;
@@ -112,7 +135,7 @@ section{
 }
 .setor{
     color: var(--corTextoPreto2);
-    font-size: 1rem;
+    font-size: .8em;
 }
 .social{
     margin-top: 1.3em;
@@ -127,24 +150,14 @@ section{
     color: #0077b5;
 }
 
-.swiper-button-prev::after,
-.swiper-button-next::after{
-    content: '';
-}
 
-.swiper-button-prev,
-.swiper-button-next{
+.swiper-button-prev:after,
+.swiper-button-next:after{
     width: initial;
     height: initial;
-    font-size: 3rem;
+    font-size: 2.5rem;
+    font-weight: 600;
     color: var(--corPrincipal);
-    display: none;
-}
-.swiper-button-prev{
-    left: 0;
-}
-.swiper-button-next{
-    right: 0;
 }
 
 .swiper-pagination-bullet{
@@ -155,4 +168,72 @@ section{
     background-color: var(--corPrincipal);
 }
 
-/* parei na responsividade */
+
+/*responsividade */
+
+@media(max-width: 1070px){
+    .texto h1{
+        font-size: 2.5rem;
+    }
+    .apresentacao > .image > .logo{
+        width: 400px;
+    }
+}
+
+@media(max-width: 828px){
+    section{
+        height: 80dvh;
+    }
+
+    .apresentacao .texto{
+        width: 90%;
+    }
+    .texto h1{
+        font-size: 3rem;
+    }
+    .titulo-section{
+        top: 7%;
+    }
+}
+
+@media(max-width: 470px){
+    .apresentacao .texto{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .texto h1{
+        font-size: 2rem;
+    }
+
+    .texto p{
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    .apresentacao > .image > .logo{
+        width: 340px;
+    }
+
+    .swiper {
+        padding: 0 1em;
+        margin: 0 1em;
+      }
+    .card-container{
+        padding-block: 3em;
+    }
+    
+    .card-img{
+        width: 120px;
+    }
+    .card-name{
+        font-size: 1rem;
+    }
+
+    .swiper-button-prev:after{
+        margin-right: 1rem;
+    }
+    .swiper-button-next:after{
+        margin-left: 1rem;
+    }
+}

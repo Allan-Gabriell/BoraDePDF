@@ -2,30 +2,33 @@ let swiperCards = new Swiper('.card-content', {
   loop: true,
   spaceBetween: 32,
   grabCursor: true,
-  // If we need pagination
+
+  autoplay: {
+    delay: 1500,
+    disableOnInteraction: false,
+  },
+
   pagination: {
     el: '.swiper-pagination',
     clickable: true,
     dynamicBullets: true,
   },
 
-  // Navigation arrows
   navigation: {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
   },
 
-  // And if we need scrollbar
-  scrollbar: {
-    el: '.swiper-scrollbar',
-  },
-
   breakpoints: {
-    600: {
+    0: {
+      slidesPerView: 1,
+    },
+    828: {
       slidesPerView: 2,
     },
-    968: {
+    1140: {
       slidesPerView: 3,
     },
+
   },
 });
