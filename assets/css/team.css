@@ -1,155 +1,213 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Asap:wght@400;600&family=Inter&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Gabarito:wght@400;500&display=swap');
-body{
-    background: #ff6b1a;
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Asap:wght@200;400;600;800&display=swap');
+:root{
+    --corPrincipal: #F58447;     
+    --corSegundaria: #efefef;  
+    --corCards: #fefefe;        
+    --corTextoPreto: #333;    
+    --corTextoPreto2: #707070;          
 }
 
-nav {
+.apresentacao{
+    display: flex;
+    align-items: center;
+    position: relative; 
+    overflow: hidden;
+}
+.apresentacao .texto{
+    width: 70%;
+    margin: 0 2em;
+    z-index: 2;
+    color: var(--corSegundaria);
+}
+.texto h1{
+    font-size: 3rem;
+    font-weight: 600;
+    margin-bottom: .5em;
+}
+.texto p{
+    font-size: 1.2rem;
+    text-align: justify;
+}
+.apresentacao > .image{
+    position: absolute;
+    z-index: 1;
+    right: 0;
+    opacity: 30%;
+}
+.apresentacao > .image > .logo{
+    width: 450px;
+}
+
+/* team section style*/
+.team-section{
+    position: relative;
     display: flex;
     justify-content: center;
-    flex-direction: row-reverse;
     align-items: center;
-    justify-content: space-between;
-
-    padding: 0% 5%;
 }
-
-.navImage{
-    width: 35%;
-}
-
-.navImage > img{
-    height: 100px;
-    border-radius: 100%;
-}
-
-nav > h1{
-    font-family: 'Gabarito', sans-serif;
-    color: #f5f2d0;
-}
-
-nav > li, a {
-    text-decoration: none;
-    color: #f5f2d0;    
-}
-
-.navLinks{
-    width: 35%;
+.titulo-section{
+    position: absolute;
     display: flex;
-    justify-content: end;
-}
-
-.links{
-    list-style: none;  
-}
-
-.links > li{
-    display: inline-block;
-    justify-content: flex-end;
-    padding: 0 10px;
-}
-
-.links > li > a{
-    transition: 0.6s;
-}
-
-.links > li > a:hover{
-    color: white;
-}
-
-main{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     justify-content: center;
-    margin: 60px;
+    top: 2%;
+    width: 100%;
 }
-main h1{
-    color: #F5F2D0;
-    font-family: 'Gabarito', sans-serif;
-    height: 500;
-    letter-spacing: 2px;
-    padding-bottom: 30px;
+.titulo-section h1{
+    font-family: 'Asap', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: var(--corPrincipal);
 }
-main > .colaboradores{
+.swiper {
+    width: 1800px;
+    padding: 0 2em;
+    margin: 0 2em;
+  }
+  
+.card-container{
+    padding-block: 3em;
+}
+.card-content{
+    margin: 0 1.25em;
+    border-radius: 1.25rem;
+    overflow: hidden;
+}
+.card-article{
+    width: 300px;
+    border-radius: 1.25rem;
+    overflow: hidden;
+}
+.card-image{
+    position: relative;
+    background-color: var(--corPrincipal);
+    padding-top: 1.5em;
+    margin-bottom: -.75em;
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
 }
-
-main > .colaboradores > * > ul{
-    padding: 15px 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    list-style: none;
+.card-img{
+    width: 150px;
+    height: 150px;
+    margin-bottom: 1.4em ;
+    border-radius: 50%;
+    border: 4px solid var(--corCards);
+    padding: 2px;
+    position: relative;
+    z-index: 5;
 }
-main > .colaboradores > * > ul >li{
-    padding: 5px 0;
+.card-data{
+    background-color: var(--corCards);
+    padding: 1.25em 2em;
+    border-radius: 1rem;
+    text-align: center;
+    position: relative;
+    z-index: 10;
 }
-label{
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    gap: 2rem;
+.card-name{
+    color: var(--corTextoPreto);
+    margin-bottom: .5em;
+    font-size: 1.3rem;
 }
-
-label > i{
+.setor{
+    color: var(--corTextoPreto2);
+    font-size: .8em;
+}
+.social{
+    margin-top: 1.3em;
+}
+.social i{
     font-size: 2rem;
 }
-
-#ch0, #ch1, #ch2, #ch3, #ch4, #ch5{
-    display: none;
+.social a .github{
+    color: var(--corTextoPreto);
+}
+.social a .linkedin{
+    color: #0077b5;
 }
 
-.colaboradores > .coordenacao{
-    display: none;    
+.swiper-button-prev:after,
+.swiper-button-next:after{
+    width: initial;
+    height: initial;
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: var(--corPrincipal);
 }
-
-.colaboradores > .mark{
-    display: none;    
+.swiper-pagination-bullet{
+    background-color: var(--corTextoPreto2);
+    opacity: 1;
 }
-
-.colaboradores > .dev{
-    display: none;    
-}
-
-.colaboradores > .design{
-    display: none;    
-}
-
-.colaboradores > .pesquisa{
-    display: none;    
-}
-
-.colaboradores > .bronca{
-    display: none;    
+.swiper-pagination-bullet-active{
+    background-color: var(--corPrincipal);
 }
 
 
+/*responsividade */
 
-#ch0:checked ~ .coordenacao{
-    display: block;
-
+@media(max-width: 1070px){
+    .texto h1{
+        font-size: 2.5rem;
+    }
+    .apresentacao > .image > .logo{
+        width: 400px;
+    }
+}
+@media (max-width: 1005px){
+    section{
+        height: 550px;
+    }
 }
 
-#ch1:checked ~ .mark{
-    display: block;
+@media(max-width: 828px){
+    section{
+        height: 80dvh;
+    }
+    .apresentacao .texto{
+        width: 90%;
+    }
+    .texto h1{
+        font-size: 3rem;
+    }
+    .titulo-section{
+        top: 7%;
+    }
 }
 
-#ch2:checked ~ .dev{
-    display: block;
-}
+@media(max-width: 470px){
+    .apresentacao .texto{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .texto h1{
+        font-size: 2rem;
+    }
+    .texto p{
+        font-size: 1rem;
+    }
+    .apresentacao > .image > .logo{
+        width: 340px;
+    }
+    .swiper {
+        padding: 0 1em;
+        margin: 0 1em;
+    }
+    .card-container{
+        padding-block: 3em;
+    }
+    .card-img{
+        width: 120px;
+    }
+    .card-name{
+        font-size: 1rem;
+    }
 
-#ch3:checked ~ .design{
-    display: block;
-}
-
-#ch4:checked ~ .pesquisa{
-    display: block;
-}
-
-#ch5:checked ~ .bronca{
-    display: block;
+    .swiper-button-prev:after{
+        margin-right: 1rem;
+    }
+    .swiper-button-next:after{
+        margin-left: 1rem;
+    }
 }
